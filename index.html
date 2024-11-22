@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Smart Watch - ShopSmart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>ShopSmart</h1>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="product-grid">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="featured-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1000" alt="Product">
+                    <button class="gallery-nav prev" onclick="prevImage()">&lt;</button>
+                    <button class="gallery-nav next" onclick="nextImage()">&gt;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=1000" alt="Thumbnail 1" class="active" onclick="setImage(0)">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&q=80&w=1000" alt="Thumbnail 2" onclick="setImage(1)">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Premium Smart Watch</h1>
+                <div class="rating">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <span>(128 reviews)</span>
+                </div>
+
+                <div class="price">
+                    <p class="amount">$299.99</p>
+                    <p class="shipping">Free shipping worldwide</p>
+                </div>
+
+                <div class="description">
+                    <h2>Description</h2>
+                    <p>Experience the perfect blend of style and technology with our Premium Smart Watch. 
+                    Featuring advanced health monitoring, seamless connectivity, and a stunning display, 
+                    this watch is designed to elevate your everyday life.</p>
+                </div>
+
+                <div class="features">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>24/7 Heart Rate Monitoring</li>
+                        <li>Water Resistant up to 50m</li>
+                        <li>5-day Battery Life</li>
+                        <li>Built-in GPS</li>
+                        <li>Sleep Tracking</li>
+                    </ul>
+                </div>
+
+                <div class="add-to-cart">
+                    <div class="quantity">
+                        <button onclick="decrementQuantity()">-</button>
+                        <span id="quantity">1</span>
+                        <button onclick="incrementQuantity()">+</button>
+                    </div>
+                    <button class="cart-btn" onclick="addToCart()">
+                        🛒 Add to Cart
+                    </button>
+                </div>
+
+                <div class="actions">
+                    <button class="action-btn">
+                        ♥ Save
+                    </button>
+                    <button class="action-btn">
+                        ↗ Share
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
